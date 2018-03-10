@@ -1,7 +1,9 @@
 {
 	"name": "ng-market",
 	"version": "0.0.1",
-	"dependencies": {},
+	"dependencies": {
+		"uglify-js": "^2.6.0"
+	},
 	"devDependencies": {
 		"grunt": "^0.4",
 		"grunt-contrib-clean": "^0.6",
