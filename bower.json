@@ -1,0 +1,10 @@
+{
+  "name": "ng-market",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~1",
+	"bootstrap-sass-official": "~3",
+    "html5shiv": "~3.7"
+  },
+  "devDependencies": {}
+}
