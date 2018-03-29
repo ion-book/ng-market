@@ -151,7 +151,7 @@ module.exports = function (grunt) {
                         cwd: '<%= yeoman.app %>/',
                         dest: '<%= yeoman.dist %>',
                         src: [
-                            '*.{ico,png,txt}',
+                            '*.{ico,png,txt,css}',
                             //'.htaccess'
                         ]
 					},
@@ -190,11 +190,10 @@ module.exports = function (grunt) {
 
 		compass: {
 			options: {
-				sassDir: '<%= yeoman.app %>/styles',
-				cssDir: '.tmp/styles',
-				imagesDir: '<%= yeoman.app %>/images',
+				cssDir: '<%= yeoman.app %>/css',
+				imagesDir: '<%= yeoman.app %>/img',
 				javascriptsDir: '<%= yeoman.app %>/scripts',
-				fontsDir: '<%= yeoman.app %>/styles/fonts',
+				fontsDir: '<%= yeoman.app %>/css/fonts',
 				importPath: 'bower_components',
 				relativeAssets: true
 			},
@@ -254,7 +253,7 @@ module.exports = function (grunt) {
 	]);
 
 	grunt.registerTask('default', [
-        'compass',
+        //'compass',
         'jshint'
     ]);
 };
